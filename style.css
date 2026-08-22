@@ -1,0 +1,26 @@
+:root {
+    --color-bg: #ffffff;
+    --color-bg-subtle: #fafafa;
+    --color-text: #1a1a1a;
+    --color-text-muted: #6b7280;
+    --color-accent: #c53030;
+    --color-accent-hover: #9b2c2c;
+    --color-border: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
