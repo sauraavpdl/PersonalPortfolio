@@ -341,3 +341,63 @@ footer p {
     font-size: 0.85rem;
     color: var(--color-text-muted);
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    nav {
+        padding: 1rem;
+    }
+
+    .nameplate a {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    /* Hero */
+    #hero {
+        padding: 3rem 1.5rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Experience */
+    .experience-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience-card img {
+        margin: 0 auto;
+    }
+
+    .tags {
+        justify-content: center;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
