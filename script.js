@@ -10,9 +10,12 @@ hamburger.addEventListener('click', function() {
 const themeToggle = document.querySelector('.theme-toggle');
 
 const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
+if (savedTheme === 'light') {
     document.body.classList.add('dark-mode');
 }
+else {
+    document.body.classList.add('dark-mode');
+    }
 
 themeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
