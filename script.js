@@ -26,3 +26,17 @@ themeToggle.addEventListener('click', function() {
         localStorage.setItem('theme', 'light');
     }
 });
+
+const copyBtn = document.querySelector('.copy-email');
+
+copyBtn.addEventListener('click', function() {
+    const email = copyBtn.dataset.email;
+
+    navigator.clipboard.writeText(email).then(function() {
+        copyBtn.classList.add('copied');
+
+        setTimeout(function() {
+            copyBtn.classList.remove('copied');
+        }, 2000);
+    });
+});
