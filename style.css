@@ -325,7 +325,7 @@ nav {
 }
 
 /* CTA section */
-#contact {
+/* #contact {
     max-width: 700px;
     margin: 0 auto;
     padding: 5rem 2rem;
@@ -363,7 +363,7 @@ nav {
 #contact .social-links svg {
     width: 22px;
     height: 22px;
-}
+} */
 
 /* footer section */
 footer {
@@ -559,5 +559,32 @@ footer p {
 #contact .social-links svg {
     width: 22px;
     height: 22px;
+}
+#contact .social-links a {
+    position: relative;
+}
+
+#contact .social-links a::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.35rem 0.7rem;
+    border-radius: 6px;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+#contact .social-links a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
